@@ -19,13 +19,13 @@
 \doublespacing
 \begin{document}
 \begin{titlepage}
-	
 
 \title{\textbf{CHE374 Week 1}}
 \author{\textit{Sanzhe Feng}}
 \date{\textit{\today}}
 \maketitle
 \end{titlepage}
+
 \setlength{\parindent}{0pt}
 
 \section*{Interest Rate}
@@ -99,4 +99,20 @@ How do we know which to choose?
 - But there is a limit for infinitesimally small period, known as \textbf{continous compounding}:
 \[i_e = \lim_{m\to\infty}(1 +\frac{r}{m})^m - 1 = e^r -1\]
 
+
+\subsection*{Bond/T-bill Problem}
+- Given the value when at maturity, what will be the price in the beginning?
+\[ P_o = P_t e^{-rt}\] where $r$ is \textbf{effective} annual yield rate. 
+
+E.g. Annual continuously compounding rate of 2.3 \%, $P_t = 100$: What is the price of the T-bill if it matures in 9 months?
+
+First, find the effective rate, $i_e = e^r -1$ 
+
+Then, $P_o = 100e^{-i_e * \frac{6}{12}}$
+
+
+\subsection*{An very important Question From PS 1}
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{Q6_PS1.png}
+\end{center}
 \end{document}
