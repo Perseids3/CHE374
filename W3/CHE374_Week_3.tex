@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{setspace}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem,amssymb}
+\usepackage{pifont}
+\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
+\geometry{left = 1.25in, right=1.25in} % New Stuff Learned!
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\doublespacing
+\begin{document}
+\begin{titlepage}
+\title{\textbf{CHE374 Week 3}}
+\author{\textit{Sanzhe Feng}}
+\date{\textit{\today}}
+\maketitle
+\end{titlepage}
+\setlength{\parindent}{0pt}
+
+\section*{Mortages}
+Mortgage Loans: A loan secured by real property (like a house). It is a French law term that means ``death contract'', the contract ends when the obligation is fulfilled. 
+
+Some terminology: Principle: amount you borrowed. Down Payment: the part that is paid by oneself. The ratio of the mortgage loan to the total value is called loan-to-value ration.
+
+A bank will loan the money and charge you an interest rate called mortgage rate. An agreed time horizon for one to pay such loan is called amortization period. The agreed upon interest rate is usually fixed for a shorter period of time is called term. After the term is over, the payments may be changed as a result of changes in interest rate. 
+
+Notice that your payment is calculated based on the amortization period. not the term.
+
+How to solve such problem: 
+
+$A = Principle(A/P, i, N)$ This montyly payment during this term; After a few terms, how much you still owe is: $Principle (F/P, i. N_{past}) - A_{old}(F/A, i, N_{past})$. This is the term after a few terms minus payment after a few terms. Then new monthly payment will follow the $A = P_{new}(A/P, i, N_{rest})$. 
+
+\section*{Bonds}
+
+Bond is a tradeable special form of loan, usually with a long term up to 30 years. The creditor promises to pay a stated amount at specified intervals for a defined period (coupon payments). And a final amount at a specific date (face value).
+
+Coupon rate: the rate used to calculate coupon payments.
+
+How much is this bond worth: 
+
+Risk == Reward: the creditor must be compensated for the risk of default, so he must dumand a lower price. If given the bond price B, the interest rate that is needed will be called \textbf{yield}:
+
+B = Coupon Payments $(P/A, i, N) +$ Face Value$(P/F, i, N)$.
+
+\end{document}
